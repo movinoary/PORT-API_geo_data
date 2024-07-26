@@ -14,8 +14,9 @@ def get_geo_data(_id):
 
 def add_geo_data(data): 
     try:
+        uuid=generate_uuid()
         body = {
-            "_id":  generate_uuid(),
+            "_id":  uuid,
             "createBy": "VOSSO-3010-ALJPB-82468HW-BVZDMSDJ6O-S9CAH",
             "geoJson" : data,
             "createAt": generate_time(),

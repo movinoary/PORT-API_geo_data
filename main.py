@@ -32,9 +32,9 @@ def get_data(_id):
 
 @app.route(f"{path}/add-data", methods=['POST'])
 def add_data():
-    protecRoute=protect_decode()
-    if protecRoute == False:
-        return res_failed_signature()
+    # protecRoute=protect_decode()
+    # if protecRoute == False:
+    #     return res_failed_signature()
     
     data = add_geo_data(request.json)
     if(data == "success"): 
